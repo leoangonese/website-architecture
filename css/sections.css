@@ -1,0 +1,411 @@
+.default {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.hero-background {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/img/bg/hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #cccccc;
+  flex-direction: column;
+}
+
+.hero-color {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(#753239, transparent);
+  color: white;
+  text-align: center;
+  flex-direction: column;
+}
+
+.primary-text {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.hero-color .primary-text {
+  font-weight: 100;
+  padding-bottom: 8px;
+}
+
+.hero-color .primary-text span {
+  font-weight: 700;
+}
+
+.second-text {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.rounded-law {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  height: 80px;
+  width: 100%;
+  border-radius: 100px 100px 0 0;
+}
+
+.law-sec {
+  background-color: white;
+  text-align: center;
+  flex-direction: column;
+}
+
+.law-padding {
+  padding-top: 8px;
+}
+
+.law-text {
+  width: 1200px;
+  text-align: justify;
+  line-height: 60px;
+  margin: 40px 0;
+}
+
+.primary-button {
+  padding: 20px 60px;
+  border-radius: 100px;
+  font-size: 40px;
+  font-weight: 100;
+  background-image: linear-gradient(to right, #f67280, #c0525e);
+}
+
+.primary-button a {
+  color: white;
+}
+
+.about {
+  background-image: linear-gradient(to bottom, #f67280, #bb3e4b);
+  color: white;
+}
+
+.text-about {
+  text-align: center;
+  padding: 0px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-about p {
+  text-align: justify;
+  width: 700px;
+  line-height: 60px;
+  padding: 40px 0;
+  font-size: 50px;
+}
+
+.text-about .primary-button {
+  background: #343434;
+  display: flex;
+  justify-content: center;
+}
+
+.text-about .primary-button img {
+  width: 114px;
+  position: absolute;
+  padding-top: 40px;
+}
+
+.about-img {
+  width: 500px;
+}
+
+.aboutList {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: linear-gradient(
+    to bottom,
+    #bb3e4b 50%,
+    #f67280 50%,
+    white 50%
+  );
+}
+
+.aboutRec {
+  width: 316px;
+  height: 316px;
+  background-image: linear-gradient(to bottom, #ffffff, #d9d9d9);
+  border: 5px solid #b93c49;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+}
+
+.aboutRec img {
+  width: 76px;
+}
+
+.aboutRec p {
+  font-size: 30px;
+  padding-top: 4px;
+}
+
+.carousel {
+  display: none;
+}
+
+@media screen and (max-width: 1500px) {
+  .default {
+    padding: 50px 0;
+  }
+
+  .primary-text {
+    font-size: 55px;
+  }
+
+  .second-text {
+    font-size: 35px;
+  }
+
+  .law-text {
+    width: 1100px;
+    line-height: 50px;
+    margin: 30px 0;
+  }
+
+  .primary-button {
+    padding: 16px 50px;
+    font-size: 35px;
+  }
+
+  .rounded-law {
+    height: 70px;
+  }
+
+  .text-about {
+    padding: 0px 60px;
+  }
+
+  .text-about p {
+    width: 550px;
+    padding: 25px 0;
+    line-height: 60px;
+    font-size: 45px;
+  }
+
+  .about-img {
+    width: 400px;
+  }
+
+  .aboutRec {
+    width: 250px;
+    height: 250px;
+  }
+
+  .aboutRec img {
+    width: 60px;
+  }
+
+  .aboutRec p {
+    font-size: 25px;
+    padding-top: 4px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .primary-text {
+    font-size: 45px;
+  }
+
+  .second-text {
+    font-size: 30px;
+  }
+
+  .law-text {
+    margin: 20px 0;
+    width: 80%;
+    line-height: 45px;
+  }
+  .default {
+    padding: 40px 0;
+  }
+
+  .primary-button {
+    padding: 16px 50px;
+    font-size: 30px;
+  }
+  .rounded-law {
+    height: 50px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-img {
+    width: 400px;
+    padding-top: 20px;
+  }
+
+  .text-about {
+    padding: 0;
+  }
+
+  .text-about p {
+    width: 80%;
+    line-height: 50px;
+    padding: 20px 0;
+    font-size: 40px;
+  }
+
+  .aboutRec {
+    width: 180px;
+    height: 180px;
+  }
+
+  .aboutRec img {
+    width: 50px;
+  }
+
+  .aboutRec p {
+    font-size: 20px;
+    padding-top: 4px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .primary-text {
+    font-size: 35px;
+  }
+
+  .second-text {
+    font-size: 25px;
+  }
+
+  .law-text {
+    width: 90%;
+    line-height: 35px;
+  }
+  .default {
+    padding: 20px 0;
+  }
+
+  .primary-button {
+    padding: 12px 40px;
+    font-size: 25px;
+  }
+
+  .rounded-law {
+    height: 40px;
+  }
+
+  .text-about p {
+    width: 90%;
+    line-height: 45px;
+    padding: 14px 0;
+    font-size: 30px;
+  }
+  .about-img {
+    width: 250px;
+    padding-top: 14px;
+  }
+
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    background-image: linear-gradient(
+      to bottom,
+      #bb3e4b 50%,
+      #f67280 50%,
+      white 50%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel-item {
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
+  .carousel-item.active {
+    opacity: 1;
+  }
+
+  .carousel-item .aboutRec {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .aboutList {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .primary-text {
+    font-size: 25px;
+  }
+
+  .second-text {
+    font-size: 20px;
+  }
+
+  .law-text {
+    width: 90%;
+    line-height: 30px;
+  }
+  .default {
+    padding: 10px 0;
+  }
+  .primary-button {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+
+  .rounded-law {
+    height: 30px;
+  }
+
+  .text-about p {
+    line-height: 35px;
+    padding: 12px 0;
+    font-size: 20px;
+  }
+
+  .about-img {
+    width: 250px;
+    padding-top: 12px;
+  }
+
+  .carousel {
+    height: 200px;
+  }
+
+  .carousel-item {
+    width: 250px;
+    height: 150px;
+  }
+}
