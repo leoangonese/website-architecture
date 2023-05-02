@@ -169,6 +169,99 @@
   display: none;
 }
 
+.work {
+  background-color: #fff;
+  flex-direction: column;
+}
+
+.work p {
+  width: 1200px;
+  line-height: 60px;
+  padding: 20px 0;
+}
+
+.work .primary-button {
+  color: white;
+  margin: 10px 0;
+}
+
+.faq-section {
+  text-align: center;
+  background-image: linear-gradient(to left top, #753239, #f67280);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-section p {
+  background: #393939;
+}
+
+.question {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px white solid;
+}
+
+.question img {
+  height: 30px;
+}
+
+.answer {
+  font-weight: 100%;
+  font-size: 30px;
+  text-align: start;
+  padding-left: 5px;
+  padding-top: 10px;
+  width: 100%;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.box-faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 80px 0;
+}
+
+.faq {
+  margin-bottom: 25px;
+  width: 1060px;
+}
+
+.recomends {
+  background-image: linear-gradient(to top, #ececec, #fff);
+  color: black;
+  text-align: center;
+  flex-direction: column;
+}
+
+.recomends-card {
+  display: flex;
+  padding-top: 80px;
+}
+
+.recomends-card .center-card-recomends {
+  padding: 0 100px;
+}
+
+.recomens .center .recomends div img,
+.recomends div p {
+  width: 312px;
+}
+
+.recomends div p {
+  padding-top: 40px;
+  font-size: 32px;
+}
+
 @media screen and (max-width: 1500px) {
   .default {
     padding: 50px 0;
@@ -224,6 +317,32 @@
   .aboutRec p {
     font-size: 25px;
     padding-top: 4px;
+  }
+
+  .box-faq {
+    margin: 70px 0;
+  }
+
+  .faq {
+    width: 1060px;
+  }
+
+  .recomends-card {
+    padding-top: 70px;
+  }
+
+  .recomends-card .center-card-recomends {
+    padding: 0 70px;
+  }
+
+  .recomens .center .recomends div img,
+  .recomends div p {
+    width: 280px;
+  }
+
+  .recomends div p {
+    padding-top: 30px;
+    font-size: 28px;
   }
 }
 
@@ -285,6 +404,37 @@
   .aboutRec p {
     font-size: 20px;
     padding-top: 4px;
+  }
+
+  .box-faq {
+    margin: 60px 0;
+  }
+
+  .faq {
+    margin-bottom: 20px;
+    width: 790px;
+  }
+
+  .recomends-card {
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .recomends-card .center-card-recomends {
+    padding: 60px;
+  }
+
+  .recomens .center .recomends div img,
+  .recomends div p {
+    width: 200px;
+    height: 200px;
+  }
+
+  .recomends div p {
+    padding-top: 20px;
+    font-size: 24px;
   }
 }
 
@@ -362,6 +512,15 @@
   .aboutList {
     display: none;
   }
+
+  .box-faq {
+    margin: 50px 0;
+  }
+
+  .faq {
+    margin-bottom: 20px;
+    width: 580px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -407,5 +566,14 @@
   .carousel-item {
     width: 250px;
     height: 150px;
+  }
+
+  .box-faq {
+    margin: 40px 0;
+  }
+
+  .faq {
+    margin-bottom: 10px;
+    width: 90%;
   }
 }

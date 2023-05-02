@@ -1,0 +1,76 @@
+.carousel-projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.container {
+  position: relative;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-wrapper {
+  overflow-x: auto;
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  width: 120px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(to right, black, transparent);
+  opacity: 1;
+  z-index: 1;
+}
+
+.arrow-left img,
+.arrow-right img {
+  opacity: 1;
+  width: 100%;
+}
+
+.arrow-right {
+  background: linear-gradient(to left, black, transparent);
+  position: absolute;
+  left: auto;
+  right: 0;
+}
+
+.item {
+  width: 700px;
+  height: 400px;
+  opacity: 0.6;
+  flex-shrink: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.current-item {
+  width: 800px;
+  opacity: 1;
+  height: 500px;
+}
+
+.gallery-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
