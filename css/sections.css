@@ -262,6 +262,174 @@
   font-size: 32px;
 }
 
+.contact {
+  background-image: linear-gradient(to bottom, #f67280, #c0525e);
+  color: white;
+}
+
+.min-contact {
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-contact {
+  width: 40%;
+}
+
+.text-contact,
+.form-contact {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.text-contact p {
+  padding: 25px 10px;
+  max-width: 500px;
+}
+
+.contact-weight {
+  font-weight: 900;
+}
+
+.contact-input,
+.contact-selected {
+  width: 600px;
+  border-radius: 20px;
+  padding: 20px;
+  border: none;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-selected {
+  width: 640px;
+}
+
+.form-contact .primary-button {
+  background: #343434;
+  color: white;
+}
+
+.email-phone {
+  width: 640px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-phone input {
+  width: 42%;
+}
+
+.footer {
+  width: 100%;
+  background: white;
+  padding: 50px 0;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.footer-logo div {
+  position: absolute;
+  height: 50px;
+  background: #e2e2e2;
+  width: 100%;
+}
+
+.footer-logo img {
+  z-index: 1;
+  height: 120px;
+  width: 120px;
+  margin-left: 40px;
+  border-radius: 100px;
+}
+
+.footer-texts {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.title-footer {
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.param-footer {
+  font-size: 20px;
+  color: black;
+}
+
+.sections-footer {
+  padding: 0 40px;
+}
+
+.social-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.social-footer img {
+  padding-right: 10px;
+  width: 40px;
+}
+
+.social-box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.copy-text {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+
+.whats-placer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whats-button {
+  box-shadow: 0px 1px 10px 1px black;
+  padding: 5px 40px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #f67280, #c0525e);
+  margin-bottom: 40px;
+}
+
+.whats-button img {
+  width: 70px;
+  height: 70px;
+  padding-right: 10px;
+}
+
+.whats-button p {
+  color: white;
+  font-size: 28px;
+}
+
 @media screen and (max-width: 1500px) {
   .default {
     padding: 50px 0;
