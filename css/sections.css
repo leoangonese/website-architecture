@@ -185,6 +185,10 @@
   margin: 10px 0;
 }
 
+.hidden-input {
+  display: none;
+}
+
 .faq-section {
   text-align: center;
   background-image: linear-gradient(to left top, #753239, #f67280);
@@ -284,14 +288,21 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   padding: 0 40px;
 }
 
 .text-contact p {
   padding: 25px 10px;
-  max-width: 500px;
+}
+
+.contact-text {
+  font-size: 62px;
+}
+
+.contact-text-2 {
+  font-size: 58px;
 }
 
 .contact-weight {
@@ -430,6 +441,13 @@
   font-size: 28px;
 }
 
+.error {
+  display: none;
+  color: red;
+  background: white;
+  margin-bottom: 5px;
+}
+
 @media screen and (max-width: 1500px) {
   .default {
     padding: 50px 0;
@@ -511,6 +529,51 @@
   .recomends div p {
     padding-top: 30px;
     font-size: 28px;
+  }
+
+  .work p {
+    width: 1000px;
+    line-height: 60px;
+    padding: 16px 0;
+  }
+
+  .text-contact p {
+    padding: 20px 10px;
+  }
+
+  .contact-text {
+    font-size: 52px;
+  }
+
+  .contact-text-2 {
+    font-size: 48px;
+  }
+
+  .contact-input,
+  .contact-selected {
+    width: 450px;
+    padding: 16px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .contact-selected {
+    width: 480px;
+  }
+
+  .form-contact .primary-button {
+    background: #343434;
+    color: white;
+  }
+
+  .email-phone {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .email-phone input {
+    width: 43%;
   }
 }
 
@@ -604,6 +667,67 @@
     padding-top: 20px;
     font-size: 24px;
   }
+
+  .work p {
+    width: 780px;
+    line-height: 40px;
+    padding: 14px 0;
+  }
+
+  .text-contact p {
+    padding: 15px 10px;
+  }
+
+  .contact-text {
+    font-size: 40px;
+  }
+
+  .contact-text-2 {
+    font-size: 38px;
+  }
+
+  .text-contact {
+    padding-bottom: 40px;
+  }
+
+  .text-contact,
+  .form-contact {
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .min-contact {
+    flex-direction: column;
+  }
+
+  .contact-input,
+  .contact-selected {
+    width: 420px;
+    padding: 12px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .contact-selected {
+    width: 450px;
+  }
+
+  .form-contact .primary-button {
+    background: #343434;
+    color: white;
+  }
+
+  .email-phone {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .email-phone input {
+    width: 42%;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -689,6 +813,48 @@
     margin-bottom: 20px;
     width: 580px;
   }
+
+  .text-contact p {
+    padding: 10px 5px;
+  }
+
+  .contact-text {
+    font-size: 32px;
+  }
+
+  .contact-text-2 {
+    font-size: 28px;
+  }
+
+  .text-contact {
+    padding-bottom: 20px;
+  }
+
+  .work p {
+    width: 85%;
+    line-height: 40px;
+    padding: 12px 0;
+  }
+
+  .contact-input,
+  .contact-selected {
+    width: 500px;
+    padding: 10px;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .contact-selected {
+    width: 520px;
+  }
+
+  .email-phone {
+    width: 515px;
+  }
+
+  .email-phone input {
+    width: 44%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -743,5 +909,31 @@
   .faq {
     margin-bottom: 10px;
     width: 90%;
+  }
+
+  .contact-input,
+  .contact-selected {
+    width: 90%;
+    padding: 10px;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .contact-selected {
+    width: 93%;
+  }
+
+  .email-phone {
+    display: none;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .email-phone input {
+    width: 100%;
+  }
+
+  .hidden-input {
+    display: block;
   }
 }
