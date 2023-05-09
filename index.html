@@ -106,67 +106,65 @@
           <a href="">Veja se você possui esse direito</a>
         </div>
       </div>
-      <div id="aboutme" class="default about">
-        <div class="text-about">
-          <h2 class="primary-text">Sobre mim</h2>
-          <p class="aboutParam second-text">
-            A expressão Lorem ipsum em design gráfico e editoração é um texto
-            padrão em latim utilizado na produção gráfica para preencher os
-            espaços de texto em publicações para testar e ajustar aspectos
-            visuais antes de utilizar conteúdo real
-          </p>
-          <div class="primary-button">
-            <a href=".work">Conheça mais sobre meus projetos</a>
+      <div class="max-about-sec">
+        <div id="aboutme" class="default about">
+          <div class="text-about">
+            <h2 class="primary-text">Sobre mim</h2>
+            <p class="aboutParam second-text">
+              A expressão Lorem ipsum em design gráfico e editoração é um texto
+              padrão em latim utilizado na produção gráfica para preencher os
+              espaços de texto em publicações para testar e ajustar aspectos
+              visuais antes de utilizar conteúdo real
+            </p>
+            <div class="primary-button">
+              <a href=".work">Conheça mais sobre meus projetos</a>
+            </div>
+          </div>
+          <figure class="about-img">
+            <img class="about-img" src="./assets/img/figure/about.png" alt="" />
+          </figure>
+
+          <div class="mobile-about">
+            <ul class="aboutList">
+              <li class="aboutRec">
+                <img src="./assets/img/icons/menu/house.png" alt="" />
+                <p>+ de 50 projetos entregues</p>
+              </li>
+              <li class="aboutRec">
+                <img src="./assets/img/icons/menu/suitcase.png" alt="" />
+                <p>+ de 6 anos de experiência</p>
+              </li>
+              <li class="aboutRec">
+                <img src="./assets/img/icons/menu/check.png" alt="" />
+                <p>agilidade e compromisso</p>
+              </li>
+              <li class="aboutRec">
+                <img src="./assets/img/icons/menu/user.png" alt="" />
+                <p>atendimento específico e exclusivo</p>
+              </li>
+            </ul>
           </div>
         </div>
-        <figure class="about-img">
-          <img class="about-img" src="./assets/img/figure/about.png" alt="" />
-        </figure>
       </div>
-      <ul class="aboutList">
-        <li class="aboutRec">
-          <img src="./assets/img/icons/menu/house.png" alt="" />
-          <p>+ de 50 projetos entregues</p>
-        </li>
-        <li class="aboutRec">
-          <img src="./assets/img/icons/menu/suitcase.png" alt="" />
-          <p>+ de 6 anos de experiência</p>
-        </li>
-        <li class="aboutRec">
-          <img src="./assets/img/icons/menu/check.png" alt="" />
-          <p>agilidade e compromisso</p>
-        </li>
-        <li class="aboutRec">
-          <img src="./assets/img/icons/menu/user.png" alt="" />
-          <p>atendimento específico e exclusivo</p>
-        </li>
-      </ul>
-
-      <div class="carousel">
-        <div class="carousel-item active">
+      <div class="max-about">
+        <ul class="aboutList">
           <li class="aboutRec">
-            <img src="./assets/img/icons/menu/check.png" alt="" />
-            <p>agilidade e compromisso</p>
+            <img src="./assets/img/icons/menu/house.png" alt="" />
+            <p>+ de 50 projetos entregues</p>
           </li>
-        </div>
-        <div class="carousel-item">
           <li class="aboutRec">
             <img src="./assets/img/icons/menu/suitcase.png" alt="" />
             <p>+ de 6 anos de experiência</p>
           </li>
-        </div>
-        <div class="carousel-item">
           <li class="aboutRec">
             <img src="./assets/img/icons/menu/check.png" alt="" />
             <p>agilidade e compromisso</p>
           </li>
-        </div>
-        <div class="carousel-item">
           <li class="aboutRec">
             <img src="./assets/img/icons/menu/user.png" alt="" />
             <p>atendimento específico e exclusivo</p>
           </li>
-        </div>
+        </ul>
       </div>
 
       <div class="default work">
@@ -255,27 +253,35 @@
           O que meus clientes falam <br />sobre meus projetos?
         </h1>
         <div class="recomends-card">
-          <div>
+          <div class="card-inside">
             <img
               src="./assets/img/icons/menu/recomends.png"
               class="img-recomend"
               alt=""
             />
-            <p>
+            <p class="recomend-text">
               Janine Angonse cria espaços elegantes e funcionais, com atenção
               aos detalhes e compromisso com a qualidade.
             </p>
           </div>
-          <div class="center-card-recomends">
-            <img src="./assets/img/icons/menu/recomends.png" alt="" />
-            <p>
+          <div class="center-card-recomends card-inside">
+            <img
+              src="./assets/img/icons/menu/recomends.png"
+              class="img-recomend"
+              alt=""
+            />
+            <p class="recomend-text">
               O trabalho de Janine Angonse é excepcional em criatividade,
               elegância e funcionalidade.
             </p>
           </div>
-          <div>
-            <img src="./assets/img/icons/menu/recomends.png" alt="" />
-            <p>
+          <div class="card-inside">
+            <img
+              src="./assets/img/icons/menu/recomends.png"
+              class="img-recomend"
+              alt=""
+            />
+            <p class="recomend-text">
               Janine Angonse é uma arquiteta talentosa e criativa, que cria
               espaços modernos, elegantes e funcionais.
             </p>
@@ -373,7 +379,7 @@
           </div>
         </div>
       </div>
-      <!-- <footer class="footer">
+      <footer class="footer">
         <figure class="footer-logo">
           <div></div>
           <img src="./assets/img/logo/primary.png" alt="" />
@@ -429,7 +435,7 @@
         </div>
    
         </div>
-      </footer> -->
+      </footer>
     </div>
 
     <script src="./js/core.js"></script>

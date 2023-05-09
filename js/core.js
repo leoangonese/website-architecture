@@ -1,28 +1,3 @@
-const carouselItems = document.querySelectorAll('.carousel-item')
-let currentIndex = 0
-
-function changeSlide() {
-  // oculta o slide atual
-  carouselItems[currentIndex].classList.remove('active')
-
-  // incrementa o índice do slide atual
-  currentIndex++
-
-  // verifica se o índice é maior do que o número de slides
-  if (currentIndex >= carouselItems.length) {
-    currentIndex = 0
-  }
-
-  // exibe o próximo slide
-  carouselItems[currentIndex].classList.add('active')
-}
-
-// exibe o primeiro slide
-carouselItems[currentIndex].classList.add('active')
-
-// alterna os slides a cada 5 segundos
-setInterval(changeSlide, 5000)
-
 const questions = document.querySelectorAll('.question')
 
 questions.forEach((question) => {
@@ -33,11 +8,11 @@ questions.forEach((question) => {
 })
 
 // Contato
-var nome = document.querySelector('#nome')
-var assunto = document.querySelector('#assunto')
-var email = document.querySelector('#email')
-var celular = document.querySelector('#celular')
-var descricao = document.querySelector('#descricao')
+const nome = document.querySelector('#nome')
+const assunto = document.querySelector('#assunto')
+const email = document.querySelector('#email')
+const celular = document.querySelector('#celular')
+const descricao = document.querySelector('#descricao')
 
 // RegEx
 const nameRegex = /[A-Z][a-z]* [A-Z][a-z]*/

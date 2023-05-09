@@ -91,9 +91,20 @@
   color: white;
 }
 
+.max-about-sec {
+  background-image: linear-gradient(to bottom, #f67280, #bb3e4b);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .about {
   background-image: linear-gradient(to bottom, #f67280, #bb3e4b);
   color: white;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1920px;
 }
 
 .text-about {
@@ -127,10 +138,29 @@
 
 .about-img {
   width: 500px;
+  padding-right: 80px;
+}
+
+.max-about {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to bottom,
+    #bb3e4b 50%,
+    #f67280 50%,
+    white 50%
+  );
+}
+
+.mobile-about {
+  display: none;
 }
 
 .aboutList {
   width: 100%;
+  max-width: 1920px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -163,10 +193,6 @@
 .aboutRec p {
   font-size: 30px;
   padding-top: 4px;
-}
-
-.carousel {
-  display: none;
 }
 
 .work {
@@ -210,7 +236,7 @@
 }
 
 .question img {
-  height: 30px;
+  height: 20px;
 }
 
 .answer {
@@ -256,14 +282,19 @@
   padding: 0 100px;
 }
 
-.recomens .center .recomends div img,
-.recomends div p {
+.card-inside {
   width: 312px;
 }
 
+.recomend-text {
+  font-size: 35px;
+  padding-top: 20px;
+}
+
+.img-recomend,
 .recomends div p {
-  padding-top: 40px;
-  font-size: 32px;
+  text-align: justify;
+  width: 100%;
 }
 
 .contact {
@@ -347,7 +378,7 @@
 .footer-logo {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
 }
 
 .footer-logo div {
@@ -361,7 +392,6 @@
   z-index: 1;
   height: 120px;
   width: 120px;
-  margin-left: 40px;
   border-radius: 100px;
 }
 
@@ -513,24 +543,6 @@
     width: 1060px;
   }
 
-  .recomends-card {
-    padding-top: 70px;
-  }
-
-  .recomends-card .center-card-recomends {
-    padding: 0 70px;
-  }
-
-  .recomens .center .recomends div img,
-  .recomends div p {
-    width: 280px;
-  }
-
-  .recomends div p {
-    padding-top: 30px;
-    font-size: 28px;
-  }
-
   .work p {
     width: 1000px;
     line-height: 60px;
@@ -575,6 +587,19 @@
   .email-phone input {
     width: 43%;
   }
+
+  .card-inside {
+    width: 280px;
+  }
+
+  .recomend-text {
+    font-size: 28px;
+    padding-top: 18px;
+  }
+
+  .recomends-card .center-card-recomends {
+    padding: 0 60px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -608,8 +633,7 @@
   }
 
   .about-img {
-    width: 400px;
-    padding-top: 20px;
+    display: none;
   }
 
   .text-about {
@@ -644,28 +668,6 @@
   .faq {
     margin-bottom: 20px;
     width: 790px;
-  }
-
-  .recomends-card {
-    padding-top: 60px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .recomends-card .center-card-recomends {
-    padding: 60px;
-  }
-
-  .recomens .center .recomends div img,
-  .recomends div p {
-    width: 200px;
-    height: 200px;
-  }
-
-  .recomends div p {
-    padding-top: 20px;
-    font-size: 24px;
   }
 
   .work p {
@@ -728,6 +730,101 @@
   .email-phone input {
     width: 42%;
   }
+
+  .max-about {
+    display: none;
+  }
+
+  .mobile-about {
+    display: flex;
+  }
+
+  .aboutList {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: none;
+    flex-direction: row;
+    color: black;
+  }
+
+  .card-inside {
+    width: 200px;
+  }
+
+  .recomend-text {
+    font-size: 24px;
+    padding-top: 16px;
+  }
+
+  .recomends-card .center-card-recomends {
+    padding: 0 50px;
+  }
+
+  .footer {
+    padding: 40px 0;
+  }
+
+  .footer-logo img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .footer-texts {
+    justify-content: space-around;
+    padding: 30px 0;
+  }
+
+  .title-footer {
+    font-size: 28px;
+    padding-bottom: 16px;
+  }
+
+  .param-footer {
+    font-size: 18px;
+  }
+
+  .sections-footer {
+    padding: 0 20px;
+  }
+
+  .social-footer {
+    padding-bottom: 10px;
+  }
+
+  .social-footer img {
+    padding-right: 10px;
+    width: 35px;
+  }
+
+  .copy-text {
+    font-size: 23px;
+  }
+
+  .whats-placer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .whats-button {
+    padding: 5px 30px;
+    margin-bottom: 30px;
+  }
+
+  .whats-button img {
+    width: 60px;
+    height: 60px;
+    padding-right: 10px;
+  }
+
+  .whats-button p {
+    color: white;
+    font-size: 23px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -744,7 +841,7 @@
     line-height: 35px;
   }
   .default {
-    padding: 20px 0;
+    padding: 30px 0;
   }
 
   .primary-button {
@@ -761,48 +858,6 @@
     line-height: 45px;
     padding: 14px 0;
     font-size: 30px;
-  }
-  .about-img {
-    width: 250px;
-    padding-top: 14px;
-  }
-
-  .carousel {
-    position: relative;
-    width: 100%;
-    height: 100px;
-    overflow: hidden;
-    background-image: linear-gradient(
-      to bottom,
-      #bb3e4b 50%,
-      #f67280 50%,
-      white 50%
-    );
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .carousel-item {
-    position: absolute;
-    width: 400px;
-    height: 100px;
-    opacity: 0;
-    transition: opacity 1s ease;
-  }
-
-  .carousel-item.active {
-    opacity: 1;
-  }
-
-  .carousel-item .aboutRec {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .aboutList {
-    display: none;
   }
 
   .box-faq {
@@ -855,6 +910,103 @@
   .email-phone input {
     width: 44%;
   }
+
+  .aboutList {
+    padding-top: 12px;
+    flex-wrap: wrap;
+  }
+
+  .aboutRec {
+    width: 90%;
+    height: 115px;
+  }
+
+  .aboutRec img {
+    width: 40px;
+  }
+
+  .aboutRec p {
+    font-size: 16px;
+    padding-top: 4px;
+  }
+
+  .recomends-card {
+    padding-top: 30px;
+  }
+
+  .card-inside {
+    width: 160px;
+  }
+
+  .recomend-text {
+    font-size: 18px;
+    padding-top: 16px;
+  }
+
+  .recomends-card .center-card-recomends {
+    padding: 0 30px;
+  }
+
+  .footer {
+    padding: 30px 0;
+  }
+
+  .footer-logo img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .footer-texts {
+    justify-content: space-around;
+    padding: 20px 0;
+  }
+
+  .title-footer {
+    font-size: 20px;
+    padding-bottom: 16px;
+  }
+
+  .param-footer {
+    font-size: 14px;
+  }
+
+  .sections-footer {
+    padding: 0 16px;
+  }
+
+  .social-footer {
+    padding-bottom: 6px;
+  }
+
+  .social-footer img {
+    padding-right: 10px;
+    width: 20px;
+  }
+
+  .social-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copy-text {
+    font-size: 20px;
+  }
+
+  .whats-button {
+    padding: 5px 20px;
+    margin-bottom: 30px;
+  }
+
+  .whats-button img {
+    width: 30px;
+    height: 30px;
+    padding-right: 6px;
+  }
+
+  .whats-button p {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -871,7 +1023,7 @@
     line-height: 30px;
   }
   .default {
-    padding: 10px 0;
+    padding: 20px 0;
   }
   .primary-button {
     padding: 10px 20px;
@@ -886,20 +1038,6 @@
     line-height: 35px;
     padding: 12px 0;
     font-size: 20px;
-  }
-
-  .about-img {
-    width: 250px;
-    padding-top: 12px;
-  }
-
-  .carousel {
-    height: 200px;
-  }
-
-  .carousel-item {
-    width: 250px;
-    height: 150px;
   }
 
   .box-faq {
@@ -935,5 +1073,85 @@
 
   .hidden-input {
     display: block;
+  }
+
+  .recomends-card {
+    padding-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .card-inside {
+    width: 140px;
+    padding: 18px;
+  }
+
+  .recomend-text {
+    font-size: 14px;
+    padding-top: 12px;
+  }
+
+  .recomends-card .center-card-recomends {
+    padding: 18px;
+  }
+
+  .question img {
+    height: 12px;
+  }
+
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer-logo img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .footer-texts {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 16px 0;
+  }
+
+  .title-footer {
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 12px;
+  }
+
+  .param-footer {
+    font-size: 16px;
+  }
+
+  .sections-footer {
+    padding: 12px 0px;
+  }
+
+  .social-footer img {
+    padding-right: 8px;
+    width: 16px;
+  }
+
+  .copy-text {
+    font-size: 16px;
+  }
+
+  .whats-button {
+    padding: 2px 10px;
+    margin-bottom: 20px;
+  }
+
+  .whats-button img {
+    width: 20px;
+    height: 20px;
+    padding-right: 6px;
+  }
+
+  .whats-button p {
+    font-size: 16px;
   }
 }
