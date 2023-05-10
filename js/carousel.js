@@ -16,13 +16,12 @@ constrols.forEach((control) => {
     }
 
     if (currentItem >= maxItems) {
-      currentItem = 1
+      currentItem = 0
     }
 
     if (currentItem < 0) {
-      currentItem = maxItems - 1
+      currentItem = maxItems
     }
-
 
     items.forEach((item) => item.classList.remove('current-item'))
 

@@ -1155,3 +1155,11 @@
     font-size: 16px;
   }
 }
+
+.nav-title:hover {
+  color: #f67280;
+}
+
+.nav-title {
+  transition: all 100ms ease-in-out;
+}
