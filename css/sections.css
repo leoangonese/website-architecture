@@ -7,6 +7,14 @@
   padding: 100px 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: black;
+}
+
 .hero-background {
   width: 100%;
   min-height: 100vh;
@@ -223,8 +231,9 @@
   flex-direction: column;
 }
 
-.faq-section p {
+.faq-section a p {
   background: #393939;
+  color: #fff;
 }
 
 .question {
@@ -478,9 +487,25 @@
   margin-bottom: 5px;
 }
 
+.padding-slide {
+  margin-bottom: 100px;
+}
+
+.margin-button {
+  margin: 50px 0 !important;
+}
+
+#margin-0 {
+  margin-bottom: 0!important;
+}
+
 @media screen and (max-width: 1500px) {
   .default {
     padding: 50px 0;
+  }
+
+  .padding-slide {
+    margin-bottom: 50px;
   }
 
   .primary-text {
@@ -599,6 +624,9 @@
 
   .recomends-card .center-card-recomends {
     padding: 0 60px;
+  }
+  .margin-button {
+    margin: 40px 0 !important;
   }
 }
 
@@ -825,6 +853,13 @@
     color: white;
     font-size: 23px;
   }
+
+  .padding-slide {
+    margin-bottom: 40px;
+  }
+  .margin-button {
+    margin: 30px 0 !important;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -1007,6 +1042,13 @@
   .whats-button p {
     font-size: 18px;
   }
+
+  .padding-slide {
+    margin-bottom: 30px;
+  }
+  .margin-button {
+    margin: 20px 0 !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1153,6 +1195,14 @@
 
   .whats-button p {
     font-size: 16px;
+  }
+
+  .padding-slide {
+    margin-bottom: 20px;
+  }
+
+  .margin-button {
+    margin: 10px 0 !important;
   }
 }
 

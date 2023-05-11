@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/sections.css" />
     <link rel="stylesheet" href="./css/carousel.css" />
-    <link rel="stylesheet" href="./css/animation.css" />
     <link
       rel="shortcut icon"
       href="./assets/img/logo/primary.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Arquiteta e Urbanista - Janine Angonese</title>
   </head>
   <body>
     <header id="header">
       <figure>
-        <img src="./assets/img/logo/primary.png" class="logo" alt="" />
+       <a href="/"> <img src="./assets/img/logo/primary.png" class="logo" alt="" /></a>
       </figure>
       <nav class="nav-header">
         <ul>
           <li>
-            <a class="nav-title" href="/">Início</a>
+            <a class="nav-title" href="#home">Início</a>
           </li>
           <li>
             <a class="nav-title" href="#aboutme">Sobre mim</a>
@@ -32,7 +34,7 @@
             <a class="nav-title" href="#projects">Projetos</a>
           </li>
           <li>
-            <a class="nav-title" href="#projects">Dúvidas</a>
+            <a class="nav-title" href="#faq">Dúvidas</a>
           </li>
           <li>
             <a class="nav-title" href="#contact">Contato</a>
@@ -73,7 +75,7 @@
       </div>
     </header>
 
-    <div class="hero-background">
+    <div class="hero-background" id="home">
       <div class="hero-color">
         <h1 class="primary-text">
           Arquitetura e Urbanismo <br />
@@ -104,7 +106,7 @@
           antes de utilizar conteúdo real
         </p>
         <div class="primary-button">
-          <a href="">Veja se você possui esse direito</a>
+          <a href="https://api.whatsapp.com/send?phone=5551998052358&text=Ol%C3%A1!%20gostaria%20de%20saber%20mais%20sobre%20a%20Lei%2011.888/2008" target="_blank">Veja se você possui esse direito</a>
         </div>
       </div>
       <div class="max-about-sec">
@@ -118,7 +120,7 @@
               visuais antes de utilizar conteúdo real
             </p>
             <div class="primary-button">
-              <a href=".work">Conheça mais sobre meus projetos</a>
+              <a href="#projects">Conheça mais sobre meus projetos</a>
             </div>
           </div>
           <figure class="about-img">
@@ -168,59 +170,36 @@
         </ul>
       </div>
 
-      <div class="default work">
+      <div class="default work" id="projects">
         <h1 class="primary-text">Com o que trabalho?</h1>
-        <p class="second-text">
+        <p class="second-text padding-slide">
           A expressão Lorem ipsum em design gráfico e editoração é um texto
           padrão em latim utilizado na produção gráfica para preencher os
           espaços de texto em publicações para testar e ajustar aspectos visuais
           antes de utilizar conteúdo real
         </p>
-        <div class="carousel-projects">
-          <div class="container">
-            <button class="arrow-left control">
-              <img src="./assets/img/icons/menu/arrow1.png" alt="" />
-            </button>
-            <button class="arrow-right control">
-              <img src="./assets/img/icons/menu/arrow2.png" alt="" />
-            </button>
-            <div class="gallery-wrapper">
-              <div class="gallery">
-                <img
-                  src="./assets/img/figure/interiors/1.png"
-                  alt=""
-                  class="item current-item"
-                />
-                <img
-                  src="./assets/img/figure/interiors/1.png"
-                  alt=""
-                  class="item current-item"
-                />
-                <img
-                  src="./assets/img/figure/interiors/1.png"
-                  alt=""
-                  class="item current-item"
-                />
-                <img
-                  src="./assets/img/figure/interiors/1.png"
-                  alt=""
-                  class="item current-item"
-                />
-                <img
-                  src="./assets/img/figure/interiors/1.png"
-                  alt=""
-                  class="item current-item"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="primary-button">Veja mais sobre interiores</div>
-        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item">      <img src="./assets/img/figure/interiors/1.png" alt="" /></div>
 
-  
+          <!-- adicione mais itens aqui -->
+        </div>
+        <a href="/page/interior.html" class="margin-button primary-button ">Veja mais sobre interiores</a>
+
+        <div class="owl-carousel owl-theme">
+          <div class="item">      <img src="./assets/img/figure/interiors/1.png" alt="" /></div>
+
+          <!-- adicione mais itens aqui -->
+        </div>
+        <a href="/page/commercials.html" class="margin-button  primary-button">Veja mais sobre comerciais</a>
+        <div class="owl-carousel owl-theme">
+          <div class="item">      <img src="./assets/img/figure/interiors/1.png" alt="" /></div>
+
+          <!-- adicione mais itens aqui -->
+        </div>
+        <a href="/page/residences.html" id="margin-0" id="margin-0" class="margin-button  primary-button">Veja mais sobre residencias</a>
       </div>
 
-      <div class="default faq-section">
+      <div class="default faq-section" id="faq">
         <h1 class="primary-text">Dúvidas Frequentes</h1>
         <h2 class="second-text">A expressão Lorem ipsum em design gráfico</h2>
         <div class="box-faq">
@@ -246,9 +225,13 @@
             <div class="answer">Brasília</div>
           </div>
         </div>
-        <p class="primary-button">
+     
+       <a href="">
+        <p class="primary-button" >
           Em caso de dúvidas, entre em contato comigo!
         </p>
+       </a>
+  
       </div>
 
       <div class="default recomends">
@@ -292,7 +275,7 @@
         </div>
       </div>
 
-      <div class="default contact">
+      <div class="default contact" id="contact">
         <div class="min-contact">
           <div class="text-contact">
             <div>
@@ -402,46 +385,83 @@
             <h4 class="title-footer">Onde estamos?</h4>
 
             <a href="" class="param-footer">
-              Rua Janine Angonese, número 000 - Bairro Centro
+              R. Roberto Francisco Behrens, 200 - Mato Grande Brasil.
+
               <br />
               <br />
-              Canoas - RS
+              Canoas - RS, 92320-060
             </a>
           </div>
           <div class="sections-footer">
             <h4 class="title-footer">Redes Sociais/Contato</h4>
             <div class="param-footer social-box">
-              <a href="" class="social-footer param-footer">
+              <a href="https://api.whatsapp.com/send?phone=5551998052358&text=Ol%C3%A1!%20Tudo%20bem?" target="_blank"  class="social-footer param-footer">
                 <img src="./assets/img/icons/social/whatsApp.png" alt="" />
-                (51) 99999-9999
+                (51) 99805-2358
               </a>
-              <a href="" class="social-footer param-footer">
+              <a href="https://www.facebook.com/janine.arquiteta" target="_black"  class="social-footer param-footer">
                 <img src="./assets/img/icons/social/facebook.png" alt="" />
-                Janine Angonese
+                janine.arquiteta
               </a>
-              <a href="" class="social-footer param-footer">
+              <a href="mailto:janineangonese@gmail.com" target="_black" class="social-footer param-footer">
                 <img src="./assets/img/icons/social/email.png" alt="" />
-                janine@contato.com
+                janineangonese@gmail.com
               </a>
             </div>
           </div>
         </div>
         <div class="whats-placer">
-          <a href="" class="whats-button">
+          <a href="https://api.whatsapp.com/send?phone=5551998052358&text=Ol%C3%A1!%20Tudo%20bem?" target="_blank" class="whats-button">
             <img src="./assets/img/icons/social/whatsAppC.png" alt="">
             <p>Entre em contato pelo meu WhatsApp</p>
           </a>
         </div>
+        <a href="https://api.whatsapp.com/message/PRE7GR6OMSKWE1?autoload=1&app_absent=0" target="_blank">
         <div class="copy-text">
           Todos os direitos reservados para <b>Janine Angonese</b> &copy;
           Desenvolvido por <b>Simplify</b>
         </div>
+      </a>
    
         </div>
       </footer>
     </div>
 
+
     <script src="./js/core.js"></script>
     <script src="./js/carousel.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+          center: true,
+          loop: true,
+          margin: 10,
+          responsive: {
+            0: {
+              items: 1,
+            },
+
+            800: {
+              items: 2,
+            },
+
+            1000: {
+              items: 3,
+            },
+            1200: {
+              items: 3,
+            },
+          },
+          nav: true,
+          navText: [
+            '<img src="./assets/img/icons/menu/arrow1.png" width="70px" alt="" />',
+            '<img src="./assets/img/icons/menu/arrow2.png" width="70px" alt="" />',
+          ],
+        })
+      })
+
+    </script>
   </body>
 </html>
