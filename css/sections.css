@@ -1234,16 +1234,6 @@ a {
   transition: all 200ms ease-in-out;
 }
 
-.primary-button:hover {
-  transform: scale(1.05);
-}
-
-.primary-button:active {
-  box-shadow: box-shadow:
-    7px 6px 28px 1px rgba(0, 0, 0, 0.24);
-  transform: translateY(4px);
-}
-
 .nav-header-mobile ul li:active {
   box-shadow: box-shadow:
     7px 6px 28px 1px rgba(0, 0, 0, 0.24);
