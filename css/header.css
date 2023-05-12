@@ -6,10 +6,8 @@
   font-family: 'Raleway', sans-serif;
 }
 
-
-
 #header {
-  z-index: 10;
+  z-index: 20;
   position: fixed;
   width: 100%;
   padding: 2px 0;
@@ -17,7 +15,6 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  border-bottom: 1px solid black;
 }
 
 .logo {
@@ -43,15 +40,11 @@
   padding: 0 8px;
   font-weight: 500;
   color: black;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .nav-header ul li a {
   color: black;
-}
-
-.mobile-button {
-  display: none;
 }
 
 @media screen and (max-width: 800px) {

@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/sections.css" />
     <link rel="stylesheet" href="./css/carousel.css" />
+    <link rel="stylesheet" href="./css/mobileMenu.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link
       rel="shortcut icon"
       href="./assets/img/logo/primary.png"
@@ -69,79 +72,128 @@
           </li>
         </ul>
       </nav>
-
-      <div class="mobile-button">
-        <img src="./assets/img/icons/menu/iconMenu.png" class="logo" alt="" />
-      </div>
+  
     </header>
+    <a href="#menu" id="toggle"><span></span></a>
+    <div id="menu">     
+
+      <nav class="nav-header-mobile">
+        <ul>
+          <li>
+            <a class="nav-title" href="#home">Início</a>
+          </li>
+          <li>
+            <a class="nav-title" href="#aboutme">Sobre mim</a>
+          </li>
+          <li>
+            <a class="nav-title" href="#projects">Projetos</a>
+          </li>
+          <li>
+            <a class="nav-title" href="#faq">Dúvidas</a>
+          </li>
+          <li>
+            <a class="nav-title" href="#contact">Contato</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="social-mobile">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/janine.arquiteta" target="_blank"
+              ><img
+                src="./assets/img/icons/social/facebook.png"
+                class="social-icon"
+                alt="Logo Facebook"
+            /></a>
+            <a
+              href="https://www.instagram.com/janine.arquiteta/"
+              target="_blank"
+              ><img
+                src="./assets/img/icons/social/instagram.png"
+                class="social-icon"
+                alt="Logo Instagram"
+            /></a>
+            <a
+              href="https://api.whatsapp.com/send?phone=5551998052358&text=Ol%C3%A1!%20Tudo%20bem?"
+              target="_blank"
+              ><img
+                src="./assets/img/icons/social/whatsApp.png"
+                class="social-icon"
+                alt="Logo WhatsApp"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+  </div>
+
 
     <div class="hero-background" id="home">
       <div class="hero-color">
-        <h1 class="primary-text">
+        <h1 class="primary-text" data-aos="fade-up">
           Arquitetura e Urbanismo <br />
           <span>Janine Angonese.</span>
         </h1>
-        <h2 class="second-text">
+        <h2 class="second-text" data-aos="fade-up">
           Crie um espaço exclusivo e funcional que reflete <br />sua
           personalidade e estilo de vida.
         </h2>
         <div class="rounded-law"></div>
       </div>
       <div class="default law-sec">
-        <h2 class="primary-text">
+        <h2 class="primary-text" data-aos="fade-up">
           Transformo seus sonhos em realidade, <br />criando projetos únicos e
           personalizados.
         </h2>
-        <h3 class="second-text law-padding" style="padding-top: 8px">
+        <h3 class="second-text law-padding" style="padding-top: 8px" data-aos="fade-up">
           Conte comigo para construir o seu futuro!
         </h3>
-        <figure>
+        <figure data-aos="fade-up">
           <img src="./assets/img/figure/cap.png" width="85%" alt="" />
         </figure>
-        <h2 class="primary-text">Você conhece a Lei 11.888/2008</h2>
-        <p class="second-text law-text">
+        <h2 class="primary-text" data-aos="fade-up">Você conhece a Lei 11.888/2008</h2>
+        <p class="second-text law-text" data-aos="fade-up">
           a lei diz:A expressão Lorem ipsum em design gráfico e editoração é um
           texto padrão em latim utilizado na produção gráfica para preencher os
           espaços de texto em publicações para testar e ajustar aspectos visuais
           antes de utilizar conteúdo real
         </p>
-        <div class="primary-button">
+        <div class="primary-button" data-aos="fade-up">
           <a href="https://api.whatsapp.com/send?phone=5551998052358&text=Ol%C3%A1!%20gostaria%20de%20saber%20mais%20sobre%20a%20Lei%2011.888/2008" target="_blank">Veja se você possui esse direito</a>
         </div>
       </div>
       <div class="max-about-sec">
         <div id="aboutme" class="default about">
           <div class="text-about">
-            <h2 class="primary-text">Sobre mim</h2>
-            <p class="aboutParam second-text">
+            <h2 class="primary-text" data-aos="fade-up">Sobre mim</h2>
+            <p class="aboutParam second-text" data-aos="fade-up">
               A expressão Lorem ipsum em design gráfico e editoração é um texto
               padrão em latim utilizado na produção gráfica para preencher os
               espaços de texto em publicações para testar e ajustar aspectos
               visuais antes de utilizar conteúdo real
             </p>
-            <div class="primary-button">
+            <div class="primary-button" data-aos="fade-up">
               <a href="#projects">Conheça mais sobre meus projetos</a>
             </div>
           </div>
-          <figure class="about-img">
+          <figure class="about-img" data-aos="fade-up">
             <img class="about-img" src="./assets/img/figure/about.png" alt="" />
           </figure>
 
           <div class="mobile-about">
             <ul class="aboutList">
-              <li class="aboutRec">
+              <li class="aboutRec" data-aos="fade-up">
                 <img src="./assets/img/icons/menu/house.png" alt="" />
                 <p>+ de 50 projetos entregues</p>
               </li>
-              <li class="aboutRec">
+              <li class="aboutRec" data-aos="fade-up">
                 <img src="./assets/img/icons/menu/suitcase.png" alt="" />
                 <p>+ de 6 anos de experiência</p>
               </li>
-              <li class="aboutRec">
+              <li class="aboutRec" data-aos="fade-up">
                 <img src="./assets/img/icons/menu/check.png" alt="" />
                 <p>agilidade e compromisso</p>
               </li>
-              <li class="aboutRec">
+              <li class="aboutRec" data-aos="fade-up">
                 <img src="./assets/img/icons/menu/user.png" alt="" />
                 <p>atendimento específico e exclusivo</p>
               </li>
@@ -150,7 +202,7 @@
         </div>
       </div>
       <div class="max-about">
-        <ul class="aboutList">
+        <ul class="aboutList" data-aos="fade-up">
           <li class="aboutRec">
             <img src="./assets/img/icons/menu/house.png" alt="" />
             <p>+ de 50 projetos entregues</p>
@@ -171,62 +223,68 @@
       </div>
 
       <div class="default work" id="projects">
-        <h1 class="primary-text">Com o que trabalho?</h1>
-        <p class="second-text padding-slide">
+        <h1 class="primary-text" data-aos="fade-up">Com o que trabalho?</h1>
+        <p class="second-text padding-slide" data-aos="fade-up">
           A expressão Lorem ipsum em design gráfico e editoração é um texto
           padrão em latim utilizado na produção gráfica para preencher os
           espaços de texto em publicações para testar e ajustar aspectos visuais
           antes de utilizar conteúdo real
         </p>
         <div class="owl-carousel owl-theme">
-          <div class="item">      <img src="./assets/img/figure/interiors/1.png" alt="" /></div>
+          <div class="item" data-aos="fade-up">      <img src="./assets/img/figure/interiors/1.png" alt="" /></div>
 
           <!-- adicione mais itens aqui -->
         </div>
-        <a href="/page/interior.html" class="margin-button primary-button ">Veja mais sobre interiores</a>
+        <a href="/page/interior.html" data-aos="fade-up" class="margin-button primary-button ">Veja mais sobre interiores</a>
 
         <div class="owl-carousel owl-theme">
-          <div class="item">      <img src="./assets/img/figure/interiors/1.png" alt="" /></div>
+          <div class="item" data-aos="fade-up">      <img src="./assets/img/figure/interiors/1.png" alt="" /></div>
 
           <!-- adicione mais itens aqui -->
         </div>
-        <a href="/page/commercials.html" class="margin-button  primary-button">Veja mais sobre comerciais</a>
+        <a href="/page/commercials.html" data-aos="fade-up" class="margin-button  primary-button">Veja mais sobre comerciais</a>
         <div class="owl-carousel owl-theme">
-          <div class="item">      <img src="./assets/img/figure/interiors/1.png" alt="" /></div>
+          <div class="item" data-aos="fade-up">      <img src="./assets/img/figure/interiors/1.png" alt="" /></div>
 
           <!-- adicione mais itens aqui -->
         </div>
-        <a href="/page/residences.html" id="margin-0" id="margin-0" class="margin-button  primary-button">Veja mais sobre residencias</a>
+        <a href="/page/residences.html" data-aos="fade-up" id="margin-0" id="margin-0" class="margin-button  primary-button">Veja mais sobre residencias</a>
       </div>
 
       <div class="default faq-section" id="faq">
-        <h1 class="primary-text">Dúvidas Frequentes</h1>
-        <h2 class="second-text">A expressão Lorem ipsum em design gráfico</h2>
+        <h1 class="primary-text" data-aos="fade-up">Dúvidas Frequentes</h1>
+        <h2 class="second-text" data-aos="fade-up">A expressão Lorem ipsum em design gráfico</h2>
         <div class="box-faq">
-          <div class="faq">
+          <div class="faq" data-aos="fade-up">
             <div class="question">
               <h3 class="second-text">Qual é a capital do Brasil?</h3>
               <img src="./assets/img/icons/menu/arrowFaq.png" alt="" />
             </div>
-            <div class="answer">Brasília</div>
+         <div class="answer">
+          <div class="second-text">Brasília</div>
+         </div>
           </div>
-          <div class="faq">
+          <div class="faq" data-aos="fade-up">
             <div class="question">
               <h3 class="second-text">Qual é a capital do Brasil?</h3>
               <img src="./assets/img/icons/menu/arrowFaq.png" alt="" />
             </div>
-            <div class="answer">Brasília</div>
+            <div class="answer">
+              <div class="second-text">Brasília</div>
+             </div>
           </div>
-          <div class="faq">
+          <div class="faq" data-aos="fade-up">
             <div class="question">
               <h3 class="second-text">Qual é a capital do Brasil?</h3>
               <img src="./assets/img/icons/menu/arrowFaq.png" alt="" />
             </div>
-            <div class="answer">Brasília</div>
+            <div class="answer">
+              <div class="second-text">Brasília</div>
+             </div>
           </div>
         </div>
      
-       <a href="">
+       <a href="#contact" data-aos="fade-up">
         <p class="primary-button" >
           Em caso de dúvidas, entre em contato comigo!
         </p>
@@ -235,11 +293,11 @@
       </div>
 
       <div class="default recomends">
-        <h1 class="primary-text">
+        <h1 class="primary-text" data-aos="fade-up">
           O que meus clientes falam <br />sobre meus projetos?
         </h1>
         <div class="recomends-card">
-          <div class="card-inside">
+          <div class="card-inside" data-aos="fade-up">
             <img
               src="./assets/img/icons/menu/recomends.png"
               class="img-recomend"
@@ -250,7 +308,7 @@
               aos detalhes e compromisso com a qualidade.
             </p>
           </div>
-          <div class="center-card-recomends card-inside">
+          <div class="center-card-recomends card-inside" data-aos="fade-up">
             <img
               src="./assets/img/icons/menu/recomends.png"
               class="img-recomend"
@@ -261,7 +319,7 @@
               elegância e funcionalidade.
             </p>
           </div>
-          <div class="card-inside">
+          <div class="card-inside" data-aos="fade-up">
             <img
               src="./assets/img/icons/menu/recomends.png"
               class="img-recomend"
@@ -279,14 +337,14 @@
         <div class="min-contact">
           <div class="text-contact">
             <div>
-              <h2 class="contact-text contact-weight">
+              <h2 class="contact-text contact-weight" data-aos="fade-up">
                 Entre em contato comigo!
               </h2>
-              <p class="contact-text-2">
+              <p class="contact-text-2" data-aos="fade-up">
                 Será um prazer agendar uma reunião e iniciarmos um projeto
                 juntos.
               </p>
-              <h3 class="contact-text contact-weight">
+              <h3 class="contact-text contact-weight" data-aos="fade-up">
                 Preencha o formulário.
               </h3>
             </div>
@@ -296,6 +354,7 @@
               Deve possuir nome e sobrenome com a primeira letra maiuscula
             </p>
             <input
+            data-aos="fade-up"
               type="text"
               name="nome"
               id="nome"
@@ -303,14 +362,15 @@
               placeholder="Nome:*"
             />
 
-            <select name="assunto" id="assunto" class="contact-selected">
+            <select name="assunto" id="assunto" class="contact-selected" data-aos="fade-up">
               <option value="" selected>Assunto:*</option>
               <option value="valor2">Valor 2</option>
               <option value="valor3">Valor 3</option>
             </select>
             <p class="error" id="error-assunto">Selecione um assunto</p>
-            <div class="email-phone">
+            <div class="email-phone" >
               <input
+              data-aos="fade-up"
                 type="email"
                 name="email"
                 id="email"
@@ -318,6 +378,7 @@
                 placeholder="E-mail:*"
               />
               <input
+              data-aos="fade-up"
                 type="phone"
                 name="celular"
                 id="celular"
@@ -326,6 +387,7 @@
               />
             </div>
             <input
+            data-aos="fade-up"
               type="email"
               name="email"
               id="email"
@@ -334,6 +396,7 @@
             />
             <p class="error" id="error-email">Coloque um email valido</p>
             <input
+            data-aos="fade-up"
               type="phone"
               name="celular"
               id="celular"
@@ -345,6 +408,7 @@
             </p>
 
             <textarea
+            data-aos="fade-up"
               name="descricao"
               id="descricao"
               placeholder="Descrição:*"
@@ -356,12 +420,12 @@
               Sua descrição deve conter mais que 15 caracteres
             </p>
 
-            <input
-              type="submit"
+            <div
+            data-aos="fade-up"
               class="primary-button"
-              placeholder="Enviar"
+              style="cursor: pointer;"
               onclick="SendForm()"
-            />
+            >Enviar</div>
           </div>
         </div>
       </div>
@@ -429,10 +493,16 @@
 
 
     <script src="./js/core.js"></script>
+    <script src="./js/mobileHeader.js"></script>
     <script src="./js/carousel.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
+  AOS.init();
+
+      
       $(document).ready(function () {
         $('.owl-carousel').owlCarousel({
           center: true,
