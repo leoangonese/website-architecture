@@ -63,7 +63,7 @@ a {
 
 .rounded-law {
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   background-color: white;
   height: 80px;
   width: 100%;
