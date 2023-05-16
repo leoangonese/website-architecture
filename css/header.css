@@ -41,11 +41,17 @@
   padding: 0 8px;
   font-weight: 500;
   color: black;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .nav-header ul li a {
   color: black;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-header ul li {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 800px) {
