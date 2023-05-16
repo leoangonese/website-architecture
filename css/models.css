@@ -1,3 +1,17 @@
+.owl-carousel .owl-item p,
+.owl-carousel .owl-item h1,
+.owl-carousel .owl-item .primary-button,
+.owl-carousel .owl-item .progress {
+  opacity: 0;
+}
+
+.owl-carousel .owl-item.active.center p,
+.owl-carousel .owl-item.active.center h1,
+.owl-carousel .owl-item.active.center .primary-button,
+.owl-carousel .owl-item.active.center .progress {
+  opacity: 1;
+}
+
 .models {
   width: 100%;
   padding-top: 120px;

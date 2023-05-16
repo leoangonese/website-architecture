@@ -889,6 +889,10 @@ a {
   .arrows-carousel {
     width: 60px;
   }
+
+  .law-sec {
+    border-radius:50px  50px 0 0  ;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -1081,6 +1085,10 @@ a {
 
   .arrows-carousel {
     width: 40px;
+  }
+
+  .law-sec {
+    border-radius:20px  20px 0 0  ;
   }
 }
 
