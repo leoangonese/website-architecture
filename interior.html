@@ -7,7 +7,28 @@
     <title>Janine Angonese | Interiores</title>
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/sections.css" />
+    <link rel="stylesheet" href="./css/carousel.css" />
     <link rel="stylesheet" href="./css/mobileMenu.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/models.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo/primary.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
   </head>
   <body>
     <header id="header">
@@ -69,7 +90,7 @@
             <a class="nav-title" href="#home">Ver Interiores</a>
           </li>
           <li>
-            <a class="nav-title" href="#home">Sobre meus Trabalhos</a>
+            <a class="nav-title" href="#home">Documentos Básicos</a>
           </li>
         </ul>
       </nav>
@@ -102,7 +123,149 @@
         </ul>
       </nav>
     </div>
+
+    <div class="models">
+      <div class="owl-carousel owl-theme">
+        <div class="item" data-aos="fade-up">
+          <div class="item-models">
+            <h1 class="second-text margin-b">
+              Projeto de interior realizado para Dionathan Santos
+            </h1>
+            <figure class="image-models margin-b">
+              <img
+                src="./assets/img/figure/interiors/1.png"
+                class="image-models"
+                alt=""
+              />
+            </figure>
+            <p class="about-models margin-b">
+              Sobre o projeto: A expressão Lorem ipsum em design gráfico e
+              editoração é um testar e ajustar aspectos visuais antes de
+              utilizar conteúdo real gráfico e editoração é um testar e ajustar
+              antes de utilizar conteúdo.
+            </p>
+            <p class="primary-button margin-b">Etapas deste projeto</p>
+            <div class="progress margin-b">
+              <div class="icon-p">
+                <img src="./assets/img/icons/menu/start.png" alt="" />
+              </div>
+              <div class="icon-p">
+                <img src="./assets/img/icons/menu/progress.png" alt="" />
+              </div>
+              <div class="icon-p" id="icon-p-selected">
+                <img src="./assets/img/icons/menu/done.png" alt="" />
+              </div>
+              <div class="progress-bar"></div>
+            </div>
+            <a href="" class="primary-button margin-b">
+              <img
+                src="./assets/img/icons/social/whatsAppC.png"
+                class="whats-img"
+                alt=""
+              />
+              <p>Solicitar um orçamento</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <figure class="footer-logo">
+          <div></div>
+          <img src="./assets/img/logo/primary.png" alt="" />
+        </figure>
+        <div class="footer-texts">
+          <div class="sections-footer">
+            <h4 class="title-footer">Atendimento</h4>
+            <div class="param-footer">
+              <p>Horário de atendimento</p>
+              <br />
+              <p>De Segunda á Sexta-Feira 08:00 às 18:00</p>
+              <br />
+              <p>Presencial e Online</p>
+            </div>
+          </div>
+          <div class="sections-footer">
+            <h4 class="title-footer">Onde estamos?</h4>
+
+            <a href="" class="param-footer">
+              R. Roberto Francisco Behrens, 200 - Mato Grande Brasil.
+
+              <br />
+              <br />
+              Canoas - RS, 92320-060
+            </a>
+          </div>
+          <div class="sections-footer">
+            <h4 class="title-footer">Redes Sociais/Contato</h4>
+            <div class="param-footer social-box">
+              <a href="https://api.whatsapp.com/send?phone=5551998052358&text=Ol%C3%A1!%20Tudo%20bem?" target="_blank"  class="social-footer param-footer">
+                <img src="./assets/img/icons/social/whatsApp.png" alt="" />
+                (51) 99805-2358
+              </a>
+              <a href="https://www.facebook.com/janine.arquiteta" target="_black"  class="social-footer param-footer">
+                <img src="./assets/img/icons/social/facebook.png" alt="" />
+                janine.arquiteta
+              </a>
+              <a href="mailto:janineangonese@gmail.com" target="_black" class="social-footer param-footer">
+                <img src="./assets/img/icons/social/email.png" alt="" />
+                janineangonese@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="whats-placer">
+          <a href="https://api.whatsapp.com/send?phone=5551998052358&text=Ol%C3%A1!%20Tudo%20bem?" target="_blank" class="whats-button">
+            <img src="./assets/img/icons/social/whatsAppC.png" alt="">
+            <p>Entre em contato pelo meu WhatsApp</p>
+          </a>
+        </div>
+        <a href="https://api.whatsapp.com/message/PRE7GR6OMSKWE1?autoload=1&app_absent=0" target="_blank">
+        <div class="copy-text">
+          Todos os direitos reservados para <b>Janine Angonese</b> &copy;
+          Desenvolvido por <b>Simplify</b>
+        </div>
+      </a>
+   
+        </div>
+      </footer>
+    </div>
+
     <script src="./js/core.js"></script>
     <script src="./js/mobileHeader.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init()
+
+      $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+          center: true,
+          loop: true,
+          margin: 10,
+          responsive: {
+            0: {
+              items: 1,
+            },
+
+            800: {
+              items: 1,
+            },
+
+            1150: {
+              items: 3,
+            },
+
+          },
+          nav: true,
+          navText: [
+            '<img src="./assets/img/icons/menu/arrow1.png" class="arrows-carousel" alt="" />',
+            '<img src="./assets/img/icons/menu/arrow2.png" class="arrows-carousel" alt="" />',
+          ],
+        })
+      })
+    </script>
   </body>
 </html>

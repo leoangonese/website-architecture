@@ -506,6 +506,10 @@ a {
   margin-bottom: 0 !important;
 }
 
+.arrows-carousel {
+  width: 100px;
+}
+
 @media screen and (max-width: 1500px) {
   .default {
     padding: 50px 0;
@@ -634,6 +638,10 @@ a {
   }
   .margin-button {
     margin: 40px 0 !important;
+  }
+
+  .arrows-carousel {
+    width: 80px;
   }
 }
 
@@ -867,6 +875,10 @@ a {
   .margin-button {
     margin: 30px 0 !important;
   }
+
+  .arrows-carousel {
+    width: 60px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -1055,6 +1067,10 @@ a {
   }
   .margin-button {
     margin: 20px 0 !important;
+  }
+
+  .arrows-carousel {
+    width: 40px;
   }
 }
 

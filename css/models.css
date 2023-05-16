@@ -1,0 +1,210 @@
+.models {
+  width: 100%;
+  padding-top: 120px;
+  text-align: center;
+}
+
+.models .primary-button {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.models .primary-button img {
+  width: 70px !important;
+  padding-right: 5px;
+}
+
+.item-models {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image-models {
+  width: 100%;
+}
+
+.about-models {
+  font-size: 40px;
+  width: 900px;
+  padding: 40px 100px;
+  background-color: #f3f3f3;
+  border-radius: 100px;
+  text-align: justify;
+}
+
+.progress {
+  width: 1400px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-bar {
+  width: 1400px;
+  padding: 10px 0;
+  position: absolute;
+  background-color: #f67280;
+  z-index: 2;
+}
+
+#icon-p-selected {
+  background-color: #b93c49;
+}
+
+.icon-p {
+  z-index: 3;
+  background-color: #f67280;
+  width: 80px;
+  border-radius: 100%;
+  padding: 25px;
+}
+
+.margin-b {
+  margin-bottom: 100px;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  position: fixed;
+}
+
+@media screen and (max-width: 1500px) {
+  .margin-b {
+    margin-bottom: 80px;
+  }
+
+  .about-models {
+    font-size: 32px;
+    width: 600px;
+    padding: 30px 80px;
+  }
+
+  .progress {
+    width: 1150px;
+    padding: 8px 0;
+  }
+
+  .progress-bar {
+    width: 1150px;
+    padding: 8px 0;
+  }
+
+  .icon-p {
+    width: 70px;
+    padding: 20px;
+  }
+
+  .models .primary-button img {
+    width: 50px !important;
+    padding-right: 5px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .margin-b {
+    margin-bottom: 60px;
+  }
+
+  .about-models {
+    font-size: 26px;
+    width: 600px;
+    padding: 25px 60px;
+  }
+
+  .progress {
+    width: 750px;
+    padding: 6px 0;
+  }
+
+  .progress-bar {
+    width: 750px;
+    padding: 6px 0;
+  }
+
+  .icon-p {
+    width: 60px;
+    padding: 18px;
+  }
+
+  .models .primary-button img {
+    width: 30px !important;
+  }
+
+  .image-models {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .margin-b {
+    margin-bottom: 40px;
+  }
+
+  .about-models {
+    font-size: 22px;
+    width: 500px;
+    padding: 16px 50px;
+  }
+
+  .progress {
+    width: 550px;
+    padding: 4px 0;
+  }
+
+  .progress-bar {
+    width: 550px;
+    padding: 4px 0;
+  }
+
+  .icon-p {
+    width: 40px;
+    padding: 12px;
+  }
+
+  .models .primary-button img {
+    width: 20px !important;
+  }
+  .image-models {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .margin-b {
+    margin-bottom: 20px;
+  }
+
+  .about-models {
+    font-size: 18px;
+    width: 80%;
+    padding: 12px;
+    border-radius: 20px;
+  }
+
+  .progress {
+    width: 90%;
+    padding: 2px 0;
+  }
+
+  .progress-bar {
+    width: 90%;
+    padding: 2px 0;
+  }
+
+  .icon-p {
+    width: 30px;
+    padding: 10px;
+  }
+
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next {
+    display: none;
+  }
+
+  .image-models {
+    width: 90%;
+  }
+}

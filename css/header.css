@@ -8,6 +8,7 @@
 
 #header {
   z-index: 20;
+  border-bottom: 2px solid black;
   position: fixed;
   width: 100%;
   padding: 2px 0;
