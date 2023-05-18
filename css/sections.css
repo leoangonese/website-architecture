@@ -52,6 +52,7 @@ a {
 }
 
 .primary-text {
+  margin:0 50px;
   font-size: 64px;
   font-weight: 700;
 }
@@ -66,6 +67,7 @@ a {
 }
 
 .second-text {
+  margin:0 50px;
   font-size: 40px;
   font-weight: 400;
 }
@@ -98,6 +100,7 @@ a {
 }
 
 .primary-button {
+  margin:0 50px;
   transition: all 200ms ease-in-out;
   padding: 20px 60px;
   border-radius: 100px;
@@ -535,10 +538,12 @@ a {
   }
 
   .primary-text {
+    margin:0 40px;
     font-size: 55px;
   }
 
   .second-text {
+    margin:0 40px;
     font-size: 35px;
   }
 
@@ -549,6 +554,7 @@ a {
   }
 
   .primary-button {
+    margin:0 40px;
     padding: 16px 50px;
     font-size: 35px;
   }
@@ -662,10 +668,12 @@ a {
 
 @media screen and (max-width: 1200px) {
   .primary-text {
+    margin:0 30px;
     font-size: 45px;
   }
 
   .second-text {
+    margin:0 30px;
     font-size: 30px;
   }
 
@@ -679,6 +687,7 @@ a {
   }
 
   .primary-button {
+    margin:0 30px;
     padding: 16px 50px;
     font-size: 30px;
   }
@@ -903,10 +912,12 @@ a {
 
 @media screen and (max-width: 800px) {
   .primary-text {
+    margin:0 20px;
     font-size: 35px;
   }
 
   .second-text {
+    margin:0 20px;
     font-size: 25px;
   }
 
@@ -919,6 +930,7 @@ a {
   }
 
   .primary-button {
+    margin:0 20px;
     padding: 12px 40px;
     font-size: 25px;
   }
@@ -1093,7 +1105,6 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-
   .social-box {
     display: flex;
     flex-direction: column;
@@ -1102,10 +1113,12 @@ a {
 
 
   .primary-text {
+    margin:0 10px;
     font-size: 25px;
   }
 
   .second-text {
+    margin:0 10px;
     font-size: 20px;
   }
 
@@ -1117,6 +1130,7 @@ a {
     padding: 40px 0;
   }
   .primary-button {
+    margin:0 10px;
     padding: 10px 20px;
     font-size: 20px;
   }
