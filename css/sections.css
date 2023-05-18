@@ -961,8 +961,8 @@ a {
 
   .contact-input,
   .contact-selected {
-    width: 500px !important;
-    padding: 10px !important;
+    width: 500px ;
+    padding: 10px;
     font-size: 12px;
     margin-bottom: 8px;
   }
