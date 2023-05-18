@@ -367,7 +367,7 @@ a {
 .contact-input,
 .contact-selected {
   width: 600px;
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 20px;
   border: none;
   font-size: 20px;
@@ -416,7 +416,7 @@ a {
   z-index: 2;
   height: 120px;
   width: 120px;
-  border-radius: 100px;
+  border-radius: 20px;
 }
 
 .footer-texts {
@@ -449,9 +449,9 @@ a {
   padding-bottom: 10px;
 }
 
-.social-footer img {
+.social-footer i {
   padding-right: 10px;
-  width: 40px;
+  font-size: 40px;
 }
 
 .social-box {
@@ -756,6 +756,7 @@ a {
 
   .contact-input,
   .contact-selected {
+    border-radius:10px;
     width: 420px;
     padding: 12px;
     font-size: 18px;
@@ -844,9 +845,9 @@ a {
     padding-bottom: 10px;
   }
 
-  .social-footer img {
+  .social-footer i {
     padding-right: 10px;
-    width: 35px;
+    font-size: 35px;
   }
 
   .copy-text {
@@ -1043,15 +1044,9 @@ a {
     padding-bottom: 6px;
   }
 
-  .social-footer img {
+  .social-footer i {
     padding-right: 10px;
-    width: 20px;
-  }
-
-  .social-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-size: 30px;
   }
 
   .copy-text {
@@ -1090,6 +1085,14 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+
+  .social-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
   .primary-text {
     font-size: 25px;
   }
@@ -1138,7 +1141,7 @@ a {
   }
 
   .contact-selected {
-    width: 93%;
+    width: 95%;
   }
 
   .email-phone {
@@ -1211,9 +1214,9 @@ a {
     padding: 12px 0px;
   }
 
-  .social-footer img {
+  .social-footer i {
     padding-right: 8px;
-    width: 16px;
+    font-size: 25px;
   }
 
   .copy-text {
@@ -1299,14 +1302,23 @@ a {
   transform: translateY(4px);
 }
 
-i {
+header i, #menu i {
   font-size: 40px;
   transition: all 200ms ease-in-out;
   color:black;
   padding:2px;
 }
 
-i:hover {
+header i:hover, #menu i:hover {
   color: #f67280;
   transform: scale(1.05);
+}
+
+.social-footer:hover {
+  color: #f67280;
+  transform: scale(1.05);
+}
+
+.social-footer {
+  transition: all 200ms ease-in-out;
 }
