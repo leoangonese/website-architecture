@@ -372,10 +372,11 @@ a {
   border: none;
   font-size: 20px;
   margin-bottom: 20px;
+  background-color:white;
+  color:black;
 }
 
 .contact-selected {
-  color:black;
   width: 640px;
 }
 
