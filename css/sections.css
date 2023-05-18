@@ -7,6 +7,24 @@
   padding: 100px 0;
 }
 
+select {
+  // A reset of styles, including removing the default dropdown arrow
+  appearance: none;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  cursor: inherit;
+  line-height: inherit;
+  // Remove dropdown arrow in IE10 & IE11
+  // @link https://www.filamentgroup.com/lab/select-css.html
+  &::-ms-expand {
+    display: none;
+  }
+
+  // Remove focus outline, will add on alternate element
+  outline: none;
+}
+
 *{
   z-index:2;
 }
