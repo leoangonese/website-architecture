@@ -41,6 +41,8 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: end;
 }
 
 .hero-color {
@@ -78,7 +80,6 @@ a {
 
 .rounded-law {
   position: absolute;
-  bottom: -40px;
   background-color: white;
   height: 80px;
   width: 100%;
