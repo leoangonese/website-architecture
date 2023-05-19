@@ -85,7 +85,8 @@
 
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
-  position: fixed;
+  position: absolute;
+  top: 25%;
 }
 
 @media screen and (max-width: 1500px) {
@@ -212,11 +213,6 @@
   .icon-p {
     width: 30px;
     padding: 10px;
-  }
-
-  .owl-carousel .owl-nav button.owl-prev,
-  .owl-carousel .owl-nav button.owl-next {
-    display: none;
   }
 
   .image-models {

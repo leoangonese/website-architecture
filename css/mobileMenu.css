@@ -53,7 +53,7 @@
 /* menu appearance*/
 #menu {
   display: none;
-  z-index: 23;
+  z-index: 19;
   position: fixed;
   padding: 20px 0;
   top: 55px;

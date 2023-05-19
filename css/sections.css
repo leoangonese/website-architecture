@@ -43,6 +43,7 @@ a {
   background-position: center;
   display: flex;
   align-items: end;
+  background-attachment: fixed;
 }
 
 .hero-color {
@@ -58,7 +59,6 @@ a {
 }
 
 .primary-text {
-  margin:0 50px;
   font-size: 64px;
   font-weight: 700;
 }
@@ -73,7 +73,6 @@ a {
 }
 
 .second-text {
-  margin:0 50px;
   font-size: 40px;
   font-weight: 400;
 }
@@ -256,7 +255,6 @@ a {
 }
 
 .question {
-  
   transition: all 200ms ease-in-out;
   cursor: pointer;
   width: 100%;
@@ -278,7 +276,7 @@ a {
 
 .answer .second-text
 {
-  transform: scale(0.95);
+  transform: scale(0.96);
 }
 
 .show {
@@ -524,6 +522,10 @@ a {
   margin-bottom: 100px;
 }
 
+#margin-text{
+  margin:  0 50px !important;
+}
+
 .margin-button {
   margin: 50px 0 !important;
 }
@@ -543,12 +545,11 @@ a {
   }
 
   .primary-text {
-    margin:0 40px;
+
     font-size: 55px;
   }
 
   .second-text {
-    margin:0 40px;
     font-size: 35px;
   }
 
@@ -666,6 +667,10 @@ a {
     margin: 40px 0 !important;
   }
 
+  #margin-text{
+    margin:  0 40px !important;
+  }
+
   .arrows-carousel {
     width: 100px;
   }
@@ -673,12 +678,11 @@ a {
 
 @media screen and (max-width: 1200px) {
   .primary-text {
-    margin:0 30px;
+
     font-size: 45px;
   }
 
   .second-text {
-    margin:0 30px;
     font-size: 30px;
   }
 
@@ -905,6 +909,9 @@ a {
   .margin-button {
     margin: 30px 0 !important;
   }
+  #margin-text{
+    margin:  0 30px !important;
+  }
 
   .arrows-carousel {
     width: 80px;
@@ -917,12 +924,11 @@ a {
 
 @media screen and (max-width: 800px) {
   .primary-text {
-    margin:0 20px;
+
     font-size: 35px;
   }
 
   .second-text {
-    margin:0 20px;
     font-size: 25px;
   }
 
@@ -1099,6 +1105,9 @@ a {
   .margin-button {
     margin: 20px 0 !important;
   }
+  #margin-text{
+    margin:  0 20px !important;
+  }
 
   .arrows-carousel {
     width: 60px;
@@ -1118,12 +1127,11 @@ a {
 
 
   .primary-text {
-    margin:0 10px;
+ 
     font-size: 25px;
   }
 
   .second-text {
-    margin:0 10px;
     font-size: 20px;
   }
 
@@ -1271,6 +1279,9 @@ a {
 
   .margin-button {
     margin: 10px 0 !important;
+  }
+  #margin-text{
+    margin:  0 10px !important;
   }
 }
 
